@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 12021-12021 HE, Scott McCallum <https://github.com/scott91e1>
+# To the extent possible under law, Scott McCallum has waived all copyright and
+# related or neighboring rights to [ fungeit EMPORIA ]. This work is published
+# from <https://what3words.com/enablers.aromas.import> Australia & New Zealand.
+#
+
+asks
+rich
+trio
+toml
+click
+quart
+arrow
+redio
+pydantic
+hypercorn
+pyrsistent
+jsonschema
+quart-trio
+quart-schema
+python-dotenv
