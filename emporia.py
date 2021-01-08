@@ -1,9 +1,23 @@
-# SPDX-License-Identifier: CC0-1.0
-# Copyright (c) 12021-12021 HE, Scott McCallum <https://github.com/scott91e1>
-# To the extent possible under law, Scott McCallum has waived all copyright and 
-# related or neighboring rights to [ fungeit EMPORIA ]. This work is published
-# from <https://what3words.com/enablers.aromas.import> Australia & New Zealand.
-#
+__header__ = """
+
+License (CC0-1.0) <https://spdx.org/licenses/CC0-1.0.html>
+
+Copyright (c) 12021-12021 HE, Scott McCallum <https://github.com/scott91e1>
+
+To the extent possible under law, Scott McCallum has waived all copyright and
+related or neighboring rights to [ fungeit EMPORIA ]. This work is published
+from <https://what3words.com/enablers.aromas.import> Australia & New Zealand.
+
+Commercial and Government entities must interact with ip@fungeit.nz to license
+the patents planned, pending and granted this software embodies. Individuals,
+Public Educational/Health Institutions and 100% Worker Owned Enterprises are
+irrevocably granted all rights need to use and generate revenue using fungeit.
+
+Lineage:
+
+  Mostly built on Trio/Quart/QuartSchema
+
+"""  # __header__
 
 import os, re, rich, trio, toml, arrow, redio
 
@@ -163,15 +177,15 @@ class Emporium:
 
 
 emporia = {}
-emporia["0"] = Emporium("0") 
+emporia["0"] = Emporium("0")
 
 @app.route("/e10/SCHEMA", methods=["POST"])
 @validate_request(Schema_APIvX0)
 @validate_response(Schema_DATAvX0, 200)
 async def e10_Query_Rules(data: Schema_APIvX0) -> Schema_DATAvX0:
     """
-    
-"Plan and prepare for every possibility, and you will never act. 
+
+"Plan and prepare for every possibility, and you will never act.
 It is nobler to have courage as we stumble into half the things
 we fear than to analyse every possible obstacle and begin nothing.
 Great things are achieved by embracing great dangers."
