@@ -17,7 +17,7 @@ Lineage:
 
   95% (ISC) <https://sr.ht/~crcx/retroforth>
 
-"""  # __header__
+""" # __header__
 
 import os, sys, copy
 

@@ -17,7 +17,7 @@ Lineage:
 
   Mostly built on Trio/Quart/QuartSchema
 
-"""  # __header__
+""" # __header__
 
 import os, re, rich, trio, toml, arrow, redio
 
